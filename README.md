@@ -7,16 +7,15 @@ npm install -S afeiship/next-xhr-header --registry=https://registry.npm.taobao.o
 ```
 
 ## apis
-| api | params | description   |
-|-----|--------|---------------|
-| get | -      | desc balabala |
+| api     | params     | description     |
+| ------- | ---------- | --------------- |
+| request | set/getter | An object / null |
 
 ## usage
 ```js
 import NxXhrHeader from 'next-xhr-header';
+const xhr = new XMLHttpRequest();
+const header = new NxXhrHeader(xhr);
 
-// code goes here:
+// header.request
 ```
-
-## resources
-- https://github.com/afeiship
