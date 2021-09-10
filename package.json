@@ -7,8 +7,20 @@
     "name": "afeiship",
     "email": "1290657123@qq.com"
   },
+  "scripts": {
+    "build:components": "cross-env NODE_ENV=components webpack"
+  },
   "license": "MIT",
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
+  },
+  "devDependencies": {
+    "@jswork/webpack-mpa-entries": "^1.0.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "cross-env": "^7.0.3",
+    "progress-bar-webpack-plugin": "^2.1.0",
+    "webpack": "^5.52.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-merge": "^5.8.0"
   }
 }
