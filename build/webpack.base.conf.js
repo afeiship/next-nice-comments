@@ -1,6 +1,7 @@
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const { resolve } = require('path');
 const webpack = require('webpack');
+const nodeExternals = require('webpack-node-externals');
 
 module.exports = (inEnv) => {
   return {
@@ -8,12 +9,13 @@ module.exports = (inEnv) => {
     entry: './public/index.js',
     stats: 'errors-only',
     resolve: {
+      extensions: ['.ts', '.tsx', '.js'],
       alias: {
-        '#': resolve(__dirname, '..'),
-        '@': resolve(__dirname, '..', 'src'),
-        'packages': resolve(__dirname, 'src/packages')
+        '@': resolve(__dirname, '..'),
+        'packages': resolve(__dirname, '..', 'packages')
       }
     },
+    externals: [nodeExternals()], // in order to ignore all modules in node_modules folder
     module: {
       rules: [
         {
@@ -22,17 +24,14 @@ module.exports = (inEnv) => {
           use: ['babel-loader']
         },
         {
+          test: /\.tsx?$/,
+          use: 'ts-loader',
+          exclude: /node_modules/
+        },
+        {
           test: /\.snippet$/,
           exclude: /node_modules/,
           use: ['raw-loader']
-        },
-        {
-          test: /\.css$/,
-          use: ['style-loader', 'css-loader']
-        },
-        {
-          test: /\.scss$/,
-          use: ['style-loader', 'css-hot-loader', 'css-loader', 'postcss-loader', 'sass-loader']
         },
         {
           test: /\.(woff|eot|ttf)\??.*$/,
@@ -44,8 +43,7 @@ module.exports = (inEnv) => {
       new ProgressBarPlugin(),
       new webpack.ProvidePlugin({
         React: 'react',
-        ReactDOM: 'react-dom',
-        ReactHighlight: '@jswork/react-highlight'
+        ReactDOM: 'react-dom'
       })
     ]
   };

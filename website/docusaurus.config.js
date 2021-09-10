@@ -1,4 +1,5 @@
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const path = require('path');
 
 // With JSDoc @type annotations, IDEs can provide config autocompletion
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
@@ -51,5 +52,15 @@ module.exports = {
       prism: {
         darkTheme: darkCodeTheme
       }
-    })
+    }),
+  plugins: [
+    [
+      path.resolve(__dirname, 'plugins/module-alias'),
+      {
+        alias: {
+          '@jswork/react-tui': path.resolve(__dirname, '../packages/index.ts')
+        }
+      }
+    ]
+  ]
 };
