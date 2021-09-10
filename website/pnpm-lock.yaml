@@ -9,6 +9,7 @@ specifiers:
   '@mdx-js/react': ^1.6.21
   '@svgr/webpack': ^5.5.0
   clsx: ^1.1.1
+  docusaurus-plugin-module-alias: ^0.0.2
   file-loader: ^6.2.0
   prism-react-renderer: ^1.2.1
   react: ^17.0.1
@@ -34,6 +35,7 @@ dependencies:
 
 devDependencies:
   '@jswork/styled-box': 1.0.59_react-dom@17.0.2+react@17.0.2
+  docusaurus-plugin-module-alias: registry.nlark.com/docusaurus-plugin-module-alias/0.0.2
   styled-components: registry.nlark.com/styled-components/5.3.1_react-dom@17.0.2+react@17.0.2
 
 packages:
@@ -6094,7 +6096,6 @@ packages:
     resolution: {integrity: sha1-85M6RONlhk9NrV25QVgQbVEegTE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@hapi/hoek/download/@hapi/hoek-9.2.0.tgz}
     name: '@hapi/hoek'
     version: 9.2.0
-    dev: false
 
   registry.nlark.com/@hapi/topo/5.1.0:
     resolution: {integrity: sha1-3ESOMyxsbjek3AL9hLqNRLmvsBI=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@hapi/topo/download/@hapi/topo-5.1.0.tgz}
@@ -6102,7 +6103,6 @@ packages:
     version: 5.1.0
     dependencies:
       '@hapi/hoek': registry.nlark.com/@hapi/hoek/9.2.0
-    dev: false
 
   registry.nlark.com/@mdx-js/mdx/1.6.22:
     resolution: {integrity: sha1-inIxV7+Q548X3A8nmVOY5scx8bo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@mdx-js/mdx/download/@mdx-js/mdx-1.6.22.tgz}
@@ -6205,19 +6205,16 @@ packages:
     version: 4.1.2
     dependencies:
       '@hapi/hoek': registry.nlark.com/@hapi/hoek/9.2.0
-    dev: false
 
   registry.nlark.com/@sideway/formula/3.0.0:
     resolution: {integrity: sha1-/hWK7jLmvV3oUES+YVvAhHigoTw=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@sideway/formula/download/@sideway/formula-3.0.0.tgz}
     name: '@sideway/formula'
     version: 3.0.0
-    dev: false
 
   registry.nlark.com/@sideway/pinpoint/2.0.0:
     resolution: {integrity: sha1-z/j/rcNyrSn9P3gneusp5jLMcN8=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@sideway/pinpoint/download/@sideway/pinpoint-2.0.0.tgz}
     name: '@sideway/pinpoint'
     version: 2.0.0
-    dev: false
 
   registry.nlark.com/@sindresorhus/is/0.14.0:
     resolution: {integrity: sha1-n7OjzzEyMoFR81PeRjLgHlIQK+o=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@sindresorhus/is/download/@sindresorhus/is-0.14.0.tgz}
@@ -7572,6 +7569,15 @@ packages:
       safe-buffer: registry.nlark.com/safe-buffer/5.2.1
     dev: false
 
+  registry.nlark.com/docusaurus-plugin-module-alias/0.0.2:
+    resolution: {integrity: sha1-At+OUocAat+O98FdNCPGq96yEe8=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/docusaurus-plugin-module-alias/download/docusaurus-plugin-module-alias-0.0.2.tgz}
+    name: docusaurus-plugin-module-alias
+    version: 0.0.2
+    engines: {node: '>=6.4.0'}
+    dependencies:
+      joi: registry.nlark.com/joi/17.4.2
+    dev: true
+
   registry.nlark.com/dom-iterator/1.0.0:
     resolution: {integrity: sha1-nAmJmEbsQcLSV63E1gFeR1nvBa0=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/dom-iterator/download/dom-iterator-1.0.0.tgz}
     name: dom-iterator
@@ -8694,7 +8700,6 @@ packages:
       '@sideway/address': registry.nlark.com/@sideway/address/4.1.2
       '@sideway/formula': registry.nlark.com/@sideway/formula/3.0.0
       '@sideway/pinpoint': registry.nlark.com/@sideway/pinpoint/2.0.0
-    dev: false
 
   registry.nlark.com/js-tokens/4.0.0:
     resolution: {integrity: sha1-GSA/tZmR35jjoocFDUZHzerzJJk=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/js-tokens/download/js-tokens-4.0.0.tgz}

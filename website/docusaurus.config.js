@@ -55,7 +55,7 @@ module.exports = {
     }),
   plugins: [
     [
-      path.resolve(__dirname, 'plugins/module-alias'),
+      'docusaurus-plugin-module-alias',
       {
         alias: {
           '@jswork/react-tui': path.resolve(__dirname, '../packages/index.ts')

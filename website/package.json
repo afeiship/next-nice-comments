@@ -43,6 +43,7 @@
   },
   "devDependencies": {
     "@jswork/styled-box": "^1.0.59",
+    "docusaurus-plugin-module-alias": "^0.0.2",
     "styled-components": "^5.3.1"
   }
 }
