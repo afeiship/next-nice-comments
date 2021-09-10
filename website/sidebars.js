@@ -13,6 +13,7 @@ const getMenus = (key) =>
 
 module.exports = {
   someSidebar: {
-    "get-started": getMenus("get-started"),
-  },
+    'get-started': getMenus('get-started'),
+    'components': getMenus('components')
+  }
 };

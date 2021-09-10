@@ -8,17 +8,16 @@
 import React from 'react';
 import View from '@jswork/styled-box';
 import styled from 'styled-components';
-import { Background, THEME } from '../../../../packages/index';
+import * as ReactTui from '../../../../packages/index';
 import 'tuicss';
 
 // 默认配置中添加插件
 Object.assign(View.defaultProps, { styled });
 
 const ReactLiveScope = {
-  THEME,
-  Background,
   View,
   React,
+  ...ReactTui,
   ...React
 };
 
