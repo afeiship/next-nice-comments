@@ -6,15 +6,22 @@ test
 __tests__
 src
 build
+docs
 gulpfile.js
-rollup.config.js
 
 .editorconfig
 .prettierrc
-
-# vscode
+Gemfile
+jest.config.js
+jest.setup.js
+LICENSE.txt
+Rakefile
+express.js
+.babelrc
 .vscode
+.release-it.json
+
+
+# vscode localhistory
 .history
-.github
-api
-docs
+.release-it.json
