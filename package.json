@@ -13,7 +13,6 @@
     "release": "release-it"
   },
   "main": "dist/index.js",
-  "module": "dist/index.esm.js",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.23.9",
